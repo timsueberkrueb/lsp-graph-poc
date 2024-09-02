@@ -1,0 +1,18 @@
+[package]
+name = "lsp-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# I/O
+serde = "1"
+serde_json = "1"
+jsonrpsee = { version = "0.24", features = ["client"] }
+# Async
+tokio = { version = "1", features = ["io-util", "process"] }
+futures = "0.3"
+# Error handling
+thiserror = "1"
+anyhow = "1"
+# LSP
+lsp-types = "0.97"

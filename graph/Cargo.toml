@@ -1,0 +1,10 @@
+[package]
+name = "graph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# De-/serialization
+serde = "1"
+# Layouting
+kurbo = "0.11"
